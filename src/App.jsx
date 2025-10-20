@@ -6,15 +6,25 @@ import './App.css'
 import Formulario from './components/form'
 import Footer from './components/footer'
 import Hero from './components/hero'
+import Valores from './pages/valores'
+import Quienes from './pages/quienes'
+import Contacto from './pages/contacto'
 function App() {
-   return (
+  return (
     <>
-      <h1>Vite + React</h1>
-      <Navbar />
-      <Hero />
-      <Formulario />
-      <Footer />
-      
+      <Router>
+        <Nav />           
+        <main className="min-h-screen">
+          <Routes>
+            <Route path="/hero" element={<Hero />} /> 
+            <Route path="/formulario" element={<Formulario />} />
+            <Route path="/valores" element={<Valores />} />    
+            <Route path="/quienes" element={<Quienes />} /> 
+            <Route path="/contacto" element={<Contacto />} />
+          </Routes>
+        </main>
+        <Footer />          
+      </Router>
     </>
   )
 }
