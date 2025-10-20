@@ -1,132 +1,140 @@
 function Contacto() {
-    return (
-         <main className="bg-light">
-      <section
-        className="page-title-section d-flex align-items-center justify-content-center text-white text-center"
-      >
-        <div className="container">
-          <h1 className="display-4 fw-bold">¡Conectemos!</h1>
-          <p className="lead">
+  return (
+    <main className="bg-gray-50">
+      <section className="py-12 bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-center animate-fadeIn">
+        <div className="container mx-auto px-6 animate-slideUp reveal-delay-100">
+          <h1 className="text-5xl md:text-6xl font-extrabold animate-scaleIn reveal-delay-200">
+            ¡Conectemos!
+          </h1>
+          <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-100 animate-fadeIn reveal-delay-300">
             ¿Quieres aprender, crear y compartir tus ideas en ciencia y
             tecnología? En TechBloom encontrarás talleres, mentorías y una
             comunidad que te inspira a crecer y soñar en grande.
           </p>
         </div>
       </section>
-       <section className="mb-5">
+      <section className="mb-10">
         <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="fw-bold mt-5">¿En qué podemos ayudarte?</h2>
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mt-6 animate-scaleIn mb-6">
+              ¿En qué podemos ayudarte?
+            </h2>
             <div
-              className="mx-auto"
-              style="
-                width: 60px;
-                height: 4px;
-                background: linear-gradient(to right, #f72585, #007aff);
-                border-radius: 5px;
-              "
+              className="mx-auto animate-slideUp reveal-delay-200 mt-4"
+              style={{
+                width: "60px",
+                height: "4px",
+                background: "linear-gradient(to right, #f72585, #007aff)",
+                borderRadius: "5px",
+              }}
             ></div>
           </div>
-          <div className="row g-4">
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body d-flex align-items-center">
-                  <i
-                    className="bi bi-code-slash fs-2 text-primary me-3"
-                    aria-hidden="true"
-                  ></i>
-                  <div>
-                    <h6 className="fw-bold">Exploración STEM</h6>
-                    <p className="small mb-0">
-                      Descubre ciencia, tecnología, ingeniería y matemáticas con
-                      actividades divertidas e interactivas.
-                    </p>
-                  </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-100 border border-transparent hover:border-gray-100">
+              <div className="flex items-start gap-5">
+                <i
+                  className="bi bi-code-slash text-4xl text-indigo-600"
+                  aria-hidden="true"
+                ></i>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-800">
+                    Exploración STEM
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Descubre ciencia, tecnología, ingeniería y matemáticas con
+                    actividades divertidas e interactivas.
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body d-flex align-items-center">
-                  <i
-                    className="bi bi-palette fs-2 text-primary me-3"
-                    aria-hidden="true"
-                  ></i>
-                  <div>
-                    <h6 className="fw-bold">Creatividad Digital</h6>
-                    <p className="small mb-0">
-                      Diseña, programa y crea proyectos que combinan innovación
-                      y arte.
-                    </p>
-                  </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-200 border border-transparent hover:border-gray-100">
+              <div className="flex items-start gap-5">
+                <i
+                  className="bi bi-palette text-4xl text-indigo-600"
+                  aria-hidden="true"
+                ></i>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-800">
+                    Creatividad Digital
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Diseña, programa y crea proyectos que combinan innovación y
+                    arte.
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body d-flex align-items-center">
-                  <i
-                    className="bi bi-graph-up-arrow fs-2 text-primary me-3"
-                    aria-hidden="true"
-                  ></i>
-                  <div>
-                    <h6 className="fw-bold">Mentorías Inspiradoras</h6>
-                    <p className="small mb-0">
-                      Conecta con mujeres líderes en tecnología que te
-                      acompañarán en tu camino.
-                    </p>
-                  </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-300 border border-transparent hover:border-gray-100">
+              <div className="flex items-start gap-5">
+                <i
+                  className="bi bi-graph-up-arrow text-4xl text-indigo-600"
+                  aria-hidden="true"
+                ></i>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-800">
+                    Mentorías Inspiradoras
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Conecta con mujeres líderes en tecnología que te acompañarán
+                    en tu camino.
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body d-flex align-items-center">
-                  <i
-                    className="bi bi-robot fs-2 text-primary me-3"
-                    aria-hidden="true"
-                  ></i>
-                  <div>
-                    <h6 className="fw-bold">Comunidad Inclusiva</h6>
-                    <p className="small mb-0">
-                      Comparte ideas, sueña en grande y trabaja en equipo con
-                      otras chicas como tú.
-                    </p>
-                  </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-100 border border-transparent hover:border-gray-100">
+              <div className="flex items-start gap-5">
+                <i
+                  className="bi bi-robot text-4xl text-indigo-600"
+                  aria-hidden="true"
+                ></i>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-800">
+                    Comunidad Inclusiva
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Comparte ideas, sueña en grande y trabaja en equipo con
+                    otras chicas como tú.
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body d-flex align-items-center">
-                  <i
-                    className="bi bi-person-check fs-2 text-primary me-3"
-                    aria-hidden="true"
-                  ></i>
-                  <div>
-                    <h6 className="fw-bold">Proyectos Colaborativos</h6>
-                    <p className="small mb-0">
-                      Impulsa iniciativas que transformen tu entorno con impacto
-                      real.
-                    </p>
-                  </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-200 border border-transparent hover:border-gray-100">
+              <div className="flex items-start gap-5">
+                <i
+                  className="bi bi-person-check text-4xl text-indigo-600"
+                  aria-hidden="true"
+                ></i>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-800">
+                    Proyectos Colaborativos
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Impulsa iniciativas que transformen tu entorno con impacto
+                    real.
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body d-flex align-items-center">
-                  <i
-                    className="bi bi-easel fs-2 text-primary me-3"
-                    aria-hidden="true"
-                  ></i>
-                  <div>
-                    <h6 className="fw-bold">Talleres y Recursos</h6>
-                    <p className="small mb-0">
-                      Accede a workshops, retos y materiales que fortalecen tus
-                      habilidades para el futuro.
-                    </p>
-                  </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-300 border border-transparent hover:border-gray-100">
+              <div className="flex items-start gap-5">
+                <i
+                  className="bi bi-easel text-4xl text-indigo-600"
+                  aria-hidden="true"
+                ></i>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-gray-800">
+                    Talleres y Recursos
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Accede a workshops, retos y materiales que fortalecen tus
+                    habilidades para el futuro.
+                  </p>
                 </div>
               </div>
             </div>
@@ -134,74 +142,72 @@ function Contacto() {
         </div>
       </section>
 
-   <section>
-        <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="fw-bold">¿Por qué elegirnos?</h2>
+      <section>
+        <div className="container px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold animate-scaleIn mb-4">
+              ¿Por qué elegirnos?
+            </h2>
             <div
-              className="mx-auto"
-              style="
-                width: 50px;
-                height: 4px;
-                background: linear-gradient(to right, #f72585, #007aff);
-                border-radius: 5px;
-              "
+              className="mx-auto animate-slideUp reveal-delay-200 mt-3"
+              style={{
+                width: "50px",
+                height: "4px",
+                background: "linear-gradient(to right, #f72585, #007aff)",
+                borderRadius: "5px",
+              }}
             ></div>
           </div>
-          <div className="row g-4">
-            <div className="col-md-6">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body">
-                  <h5 className="fw-bold">Empoderamiento Real y Emocional</h5>
-                  <p>
-                    Nos enfocamos en fortalecer tanto el conocimiento
-                    tecnológico como el bienestar emocional, creando un espacio
-                    seguro y motivador.
-                  </p>
-                </div>
-              </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-200 border border-transparent hover:border-gray-100">
+              <h5 className="text-xl font-bold mb-2 text-gray-800">
+                Empoderamiento Real y Emocional
+              </h5>
+              <p className="mt-2 text-gray-600">
+                Nos enfocamos en fortalecer tanto el conocimiento tecnológico
+                como el bienestar emocional, creando un espacio seguro y
+                motivador.
+              </p>
             </div>
-            <div className="col-md-6">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body">
-                  <h5 className="fw-bold">Atención Personalizada y Cercana</h5>
-                  <p>
-                    Valoramos cada paso del aprendizaje, acompañando a las
-                    estudiantes con apoyo constante y herramientas para su
-                    crecimiento integral.
-                  </p>
-                </div>
-              </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-300 border border-transparent hover:border-gray-100">
+              <h5 className="text-xl font-bold mb-2 text-gray-800">
+                Atención Personalizada y Cercana
+              </h5>
+              <p className="mt-2 text-gray-600">
+                Valoramos cada paso del aprendizaje, acompañando a las
+                estudiantes con apoyo constante y herramientas para su
+                crecimiento integral.
+              </p>
             </div>
-            <div className="col-md-6">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body">
-                  <h5 className="fw-bold">Compromiso con el Futuro Femenino</h5>
-                  <p>
-                    Fomentamos vocaciones STEM desde la infancia, cultivando
-                    líderes y científicas que transformarán el mundo con
-                    creatividad y pasión.
-                  </p>
-                </div>
-              </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-200 border border-transparent hover:border-gray-100">
+              <h5 className="text-xl font-bold mb-2 text-gray-800">
+                Compromiso con el Futuro Femenino
+              </h5>
+              <p className="mt-2 text-gray-600">
+                Fomentamos vocaciones STEM desde la infancia, cultivando líderes
+                y científicas que transformarán el mundo con creatividad y
+                pasión.
+              </p>
             </div>
-            <div className="col-md-6">
-              <div className="card h-100 p-3 shadow-sm">
-                <div className="card-body">
-                  <h5 className="fw-bold">El Camino que Florece</h5>
-                  <p>
-                    Queremos que TechBloom sea más que una plataforma: un
-                    movimiento que impulse a miles de niñas a sentirse cómodas
-                    en el mundo de la tecnología.
-                  </p>
-                </div>
-              </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-300 border border-transparent hover:border-gray-100">
+              <h5 className="text-xl font-bold mb-2 text-gray-800">
+                El Camino que Florece
+              </h5>
+              <p className="mt-2 text-gray-600">
+                Queremos que TechBloom sea más que una plataforma: un movimiento
+                que impulse a miles de niñas a sentirse cómodas en el mundo de
+                la tecnología.
+              </p>
             </div>
           </div>
         </div>
       </section>
     </main>
-    )
-} 
+  );
+}
 
 export default Contacto;
