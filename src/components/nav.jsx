@@ -63,7 +63,7 @@ function Navbar() {
           </li>
           <li>
             <a
-              href="/quienes-somos"
+              href="/quienes"
               className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               Quiénes somos
