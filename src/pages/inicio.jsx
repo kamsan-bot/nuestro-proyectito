@@ -479,9 +479,12 @@ return (
 
       {/* 👥 Equipo */}
       <section id="equipo" className="py-12">
-        <h2 className="text-3xl font-bold mb-8 text-center text-pink-600">
-          👥 Nuestro equipo
-        </h2>
+        <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
+           👥Nuestro Equipo
+            </h2>
+            <div className="w-16 h-1 mt-3 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-blue-500 animate-slideUp reveal-delay-300"></div>
+          </div>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
           {equipo.map((persona, index) => (
             <motion.div
