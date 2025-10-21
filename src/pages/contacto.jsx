@@ -1,4 +1,22 @@
 function Contacto() {
+const services = [
+  {
+    titulo: "Diseño Web Personalizado",
+    descripcion: "Creamos sitios modernos y adaptables para destacar tu marca digital.",
+    icono: "💻",
+  },
+  {
+    titulo: "Gestión de Portafolios",
+    descripcion: "Organizamos tus proyectos de manera visual e interactiva.",
+    icono: "🗂️",
+  },
+  {
+    titulo: "Asesoría Digital Colectiva",
+    descripcion: "Ayudamos a equipos a crear una identidad digital sólida y coherente.",
+    icono: "🚀",
+  },
+];
+
   return (
     <main className="bg-gray-50">
       <section className="py-12 bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-center animate-fadeIn">
@@ -34,21 +52,19 @@ function Contacto() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
             {services.map((s, idx) => (
               <div
-                key={s.id}
+                key={idx}
                 className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-${
                   100 + idx * 100
                 } border border-transparent hover:border-gray-100`}
               >
                 <div className="flex items-start gap-5">
-                  <i
-                    className={`bi bi-${s.icon} text-4xl text-indigo-600`}
-                    aria-hidden="true"
-                  ></i>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-gray-800">{s.title}</h3>
-                    <p className="text-sm text-gray-600">{s.text}</p>
-                  </div>
-                </div>
+  <span className="text-4xl">{s.icono}</span>
+  <div>
+    <h3 className="text-xl font-bold mb-2 text-gray-800">{s.titulo}</h3>
+    <p className="text-sm text-gray-600">{s.descripcion}</p>
+  </div>
+</div>
+
               </div>
             ))}
           </div>

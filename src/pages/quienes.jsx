@@ -1,5 +1,9 @@
 import React from "react";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import proyectos from "../data/proyectos.json";
+import habilidades from "../data/habilidades.json";
+import equipo from "../data/equipo.json";
+import { motion } from "framer-motion";
 
 function Quienes() {
   const team = [
@@ -25,6 +29,33 @@ function Quienes() {
       twitter: "https://x.com/?lang=es",
     },
   ];
+  const habilidades = [
+  { nombre: "HTML", nivel: "Avanzado" },
+  { nombre: "CSS", nivel: "Intermedio" },
+  { nombre: "JavaScript", nivel: "Avanzado" },
+  { nombre: "React", nivel: "Intermedio" },
+];
+
+const equipo = [
+  {
+    foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuQa70z60Do9vtDFaKI33S6Ts3At-fewwUZgtwSwrfpIp-NarCCyj_esu4KEYRJmECsWY&usqp=CAU",
+    nombre: "Kamila",
+    rol: "Desarrolladora Frontend",
+    descripcion: "Apasionada por el diseño y la experiencia de usuario.",
+  },
+  {
+    foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN-IrlE_SxWFCsGjkyDvAGkT_zxDN4VQn3cimLxTHw2xNiGYIB9RUWLearBXYUawK16DY&usqp=CAU",
+    nombre: "luana",
+    rol: "Backend Developer",
+    descripcion: "Le gusta automatizarlo todo y optimizar el rendimiento.",
+  },
+  {
+    foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOGBo3aUb24191tEq5nHk2PIr5GTT1-qRG4Z39Ss40cRngZNTFG6NtHdSe_0RxWkJUR8&usqp=CAU",
+    nombre: "Ariana",
+    rol: "Desarrolladora Frontend",
+    descripcion: "Apasionada por el diseño y la experiencia de usuario.",
+  },
+];
 
   return (
     <main className="bg-gray-50">
@@ -41,110 +72,52 @@ function Quienes() {
         </div>
       </section>
 
-      <section id="team" className="py-16">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold animate-scaleIn mb-2">
-            Nuestro Equipo
-          </h2>
-          <div className="mx-auto mt-4 w-16 h-1 rounded-full bg-gradient-to-r from-pink-500 to-blue-500 animate-slideUp reveal-delay-200" />
-
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((member, idx) => (
-              <div
-                key={member.name}
-                className={`bg-white rounded-2xl p-6 shadow-lg transform transition hover:-translate-y-3 duration-300 animate-slideUp reveal-delay-${
-                  100 + idx * 100
-                }`}
-              >
-                <img
-                  src={member.img}
-                  alt={`Foto de ${member.name}`}
-                  className="w-44 h-44 object-cover rounded-full mx-auto shadow-sm"
-                />
-                <div className="mt-4">
-                  <h5 className="text-xl font-bold">{member.name}</h5>
-                  <p className="text-gray-500">{member.role}</p>
-
-                  <div className="mt-3 flex items-center justify-center gap-4 text-2xl text-gray-700">
-                    <a
-                      href={member.linkedin}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hover:text-blue-600 transition-colors"
-                    >
-                      <FaLinkedin />
-                    </a>
-                    <a
-                      href={member.twitter}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hover:text-blue-400 transition-colors"
-                    >
-                      <FaTwitter />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
+      {/* Habilidades */}
+      <section id="habilidades" className="py-12 bg-rose-50">
+        <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
+           💡 Habilidades del equipo
+            </h2>
+            <div className="w-16 h-1 mt-3 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-blue-500 animate-slideUp reveal-delay-300"></div>
           </div>
-        </div>
+        <ul className="flex flex-wrap justify-center gap-4">
+          {habilidades.map((h, index) => (
+            <motion.li
+              key={index}
+              className="bg-yellow-100 px-5 py-3 rounded-full text-gray-800 font-medium hover:bg-rose-300 transition-colors"
+              whileHover={{ scale: 1.1 }}
+            >
+              {h.nombre} — {h.nivel}
+            </motion.li>
+          ))}
+        </ul>
       </section>
 
-      <section className="py-16 bg-gray-100">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold animate-scaleIn">
-            Nuestros Pilares
-          </h2>
-          <div
-            className="mx-auto my-6"
-            style={{
-              width: "90px",
-              height: "6px",
-              background: "linear-gradient(to right, #e05f99, #007aff)",
-              borderRadius: "5px",
-            }}
-          />
-
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transform hover:-translate-y-3 transition-all duration-300 animate-slideUp reveal-delay-200">
-              <img
-                src="../img/tiro-al-blanco.jpg"
-                alt="Nuestra Visión"
-                className="mx-auto mb-4 object-contain w-[120px] h-[120px] animate-scaleIn reveal-delay-200"
-              />
-              <h3 className="text-xl font-bold mb-2">Nuestra Visión</h3>
-              <p className="text-gray-600">
-                Impulsamos un futuro donde las niñas encuentren en la ciencia y
-                la tecnología un espacio para aprender, innovar y liderar.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transform hover:-translate-y-3 transition-all duration-300 animate-slideUp reveal-delay-300">
-              <img
-                src="../img/diamante.jpg"
-                alt="Nuestros Valores"
-                className="mx-auto mb-4 object-contain w-[120px] h-[120px] animate-scaleIn reveal-delay-300"
-              />
-              <h3 className="text-xl font-bold mb-2">Nuestros Valores</h3>
-              <p className="text-gray-600">
-                Fomentamos la curiosidad, la creatividad y el trabajo en equipo
-                para que cada chica descubra su verdadero potencial.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-sm animate-slideUp reveal-delay-400">
-              <img
-                src="../img/check.jpg"
-                alt="Nuestro Compromiso"
-                className="mx-auto mb-4 object-contain w-[120px] h-[120px] animate-scaleIn reveal-delay-400"
-              />
-              <h3 className="text-xl font-bold mb-2">Nuestro Compromiso</h3>
-              <p className="text-gray-600">
-                Creamos experiencias que inspiran, fortalecen habilidades y
-                construyen un camino hacia la inclusión y la innovación.
-              </p>
-            </div>
+      {/* Equipo */}
+      <section id="equipo" className="py-12">
+        <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
+           👥Nuestro Equipo
+            </h2>
+            <div className="w-16 h-1 mt-3 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-blue-500 animate-slideUp reveal-delay-300"></div>
           </div>
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+          {equipo.map((persona, index) => (
+            <motion.div
+              key={index}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 text-center w-72 transition-all duration-300"
+              whileHover={{ y: -10 }}
+            >
+              <img
+                src={persona.foto}
+                alt={persona.nombre}
+                className="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-pink-200"
+              />
+              <h4 className="text-lg font-semibold">{persona.nombre}</h4>
+              <p className="text-pink-500 font-medium">{persona.rol}</p>
+              <p className="text-gray-600 mt-2">{persona.descripcion}</p>
+            </motion.div>
+          ))}
         </div>
       </section>
 

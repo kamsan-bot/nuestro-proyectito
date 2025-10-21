@@ -22,6 +22,7 @@ function App() {
               <>
               <Hero />
               <Inicio />
+               <Formulario />
               </>
             } /> 
             <Route path="/valores" element={<Valores />} />    

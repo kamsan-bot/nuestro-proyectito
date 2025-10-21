@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FaWhatsapp, FaInstagram, FaYoutube } from "react-icons/fa";
 import proyectos from "../data/proyectos.json";
-import habilidades from "../data/habilidades.json";
-import equipo from "../data/equipo.json";
 import { motion } from "framer-motion";
 
 const features = [
@@ -386,34 +384,6 @@ const proyectos = [
     link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDDJPBR9V_gTW9eVTWn0BhUUN3wHZAssDxw&s",
   },
 ];
-
-const habilidades = [
-  { nombre: "HTML", nivel: "Avanzado" },
-  { nombre: "CSS", nivel: "Intermedio" },
-  { nombre: "JavaScript", nivel: "Avanzado" },
-  { nombre: "React", nivel: "Intermedio" },
-];
-
-const equipo = [
-  {
-    foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuQa70z60Do9vtDFaKI33S6Ts3At-fewwUZgtwSwrfpIp-NarCCyj_esu4KEYRJmECsWY&usqp=CAU",
-    nombre: "Kamila",
-    rol: "Desarrolladora Frontend",
-    descripcion: "Apasionada por el diseño y la experiencia de usuario.",
-  },
-  {
-    foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN-IrlE_SxWFCsGjkyDvAGkT_zxDN4VQn3cimLxTHw2xNiGYIB9RUWLearBXYUawK16DY&usqp=CAU",
-    nombre: "luana",
-    rol: "Backend Developer",
-    descripcion: "Le gusta automatizarlo todo y optimizar el rendimiento.",
-  },
-  {
-    foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOGBo3aUb24191tEq5nHk2PIr5GTT1-qRG4Z39Ss40cRngZNTFG6NtHdSe_0RxWkJUR8&usqp=CAU",
-    nombre: "Ariana",
-    rol: "Desarrolladora Frontend",
-    descripcion: "Apasionada por el diseño y la experiencia de usuario.",
-  },
-];
 return (
     <main className="bg-gray-50 text-gray-800 min-h-screen p-8">
       {/* Proyectos del equipo */}
@@ -451,55 +421,6 @@ return (
                   Ver más
                 </a>
               </div>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      {/* Habilidades */}
-      <section id="habilidades" className="py-12 bg-rose-50">
-        <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
-           💡 Habilidades del equipo
-            </h2>
-            <div className="w-16 h-1 mt-3 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-blue-500 animate-slideUp reveal-delay-300"></div>
-          </div>
-        <ul className="flex flex-wrap justify-center gap-4">
-          {habilidades.map((h, index) => (
-            <motion.li
-              key={index}
-              className="bg-yellow-100 px-5 py-3 rounded-full text-gray-800 font-medium hover:bg-rose-300 transition-colors"
-              whileHover={{ scale: 1.1 }}
-            >
-              {h.nombre} — {h.nivel}
-            </motion.li>
-          ))}
-        </ul>
-      </section>
-
-      {/* Equipo */}
-      <section id="equipo" className="py-12">
-        <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
-           👥Nuestro Equipo
-            </h2>
-            <div className="w-16 h-1 mt-3 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-blue-500 animate-slideUp reveal-delay-300"></div>
-          </div>
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
-          {equipo.map((persona, index) => (
-            <motion.div
-              key={index}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl p-6 text-center w-72 transition-all duration-300"
-              whileHover={{ y: -10 }}
-            >
-              <img
-                src={persona.foto}
-                alt={persona.nombre}
-                className="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-pink-200"
-              />
-              <h4 className="text-lg font-semibold">{persona.nombre}</h4>
-              <p className="text-pink-500 font-medium">{persona.rol}</p>
-              <p className="text-gray-600 mt-2">{persona.descripcion}</p>
             </motion.div>
           ))}
         </div>
