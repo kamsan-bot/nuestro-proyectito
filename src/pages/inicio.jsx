@@ -397,7 +397,7 @@ const habilidades = [
 const equipo = [
   {
     foto: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuQa70z60Do9vtDFaKI33S6Ts3At-fewwUZgtwSwrfpIp-NarCCyj_esu4KEYRJmECsWY&usqp=CAU",
-    nombre: "Alexa",
+    nombre: "Kamila",
     rol: "Desarrolladora Frontend",
     descripcion: "Apasionada por el diseño y la experiencia de usuario.",
   },
