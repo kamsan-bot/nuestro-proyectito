@@ -416,7 +416,7 @@ const equipo = [
 ];
 return (
     <main className="bg-gray-50 text-gray-800 min-h-screen p-8">
-      {/* 🚀 Proyectos del equipo */}
+      {/* Proyectos del equipo */}
        <section id="proyectos" className="py-12">
         <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
@@ -456,8 +456,8 @@ return (
         </div>
       </section>
 
-      {/* 💡 Habilidades */}
-      <section id="habilidades" className="py-12 bg-yellow-50">
+      {/* Habilidades */}
+      <section id="habilidades" className="py-12 bg-rose-50">
         <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
            💡 Habilidades del equipo
@@ -468,7 +468,7 @@ return (
           {habilidades.map((h, index) => (
             <motion.li
               key={index}
-              className="bg-yellow-100 px-5 py-3 rounded-full text-gray-800 font-medium hover:bg-yellow-200 transition-colors"
+              className="bg-yellow-100 px-5 py-3 rounded-full text-gray-800 font-medium hover:bg-rose-300 transition-colors"
               whileHover={{ scale: 1.1 }}
             >
               {h.nombre} — {h.nivel}
@@ -477,7 +477,7 @@ return (
         </ul>
       </section>
 
-      {/* 👥 Equipo */}
+      {/* Equipo */}
       <section id="equipo" className="py-12">
         <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
