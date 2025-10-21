@@ -1,0 +1,14 @@
+[
+  {
+    "nombre": "Alexa",
+    "rol": "Desarrolladora Frontend",
+    "descripcion": "Apasionada por el diseño y la experiencia de usuario.",
+    "foto": "img/alexa.jpg"
+  },
+  {
+    "nombre": "Juan",
+    "rol": "Backend Developer",
+    "descripcion": "Le gusta automatizarlo todo y optimizar el rendimiento.",
+    "foto": "img/juan.jpg"
+  }
+]

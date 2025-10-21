@@ -1,0 +1,6 @@
+[
+  { "nombre": "HTML", "nivel": "Avanzado" },
+  { "nombre": "CSS", "nivel": "Intermedio" },
+  { "nombre": "JavaScript", "nivel": "Avanzado" },
+  { "nombre": "React", "nivel": "Intermedio" }
+]

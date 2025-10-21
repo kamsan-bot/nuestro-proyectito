@@ -2,6 +2,7 @@ function Contacto() {
   return (
     <main className="bg-gray-50">
       <section className="py-12 bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-center animate-fadeIn">
+                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-6 animate-slideUp reveal-delay-100">
           <h1 className="text-5xl md:text-6xl font-extrabold animate-scaleIn reveal-delay-200">
             ¡Conectemos!
@@ -31,113 +32,25 @@ function Contacto() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12">
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-100 border border-transparent hover:border-gray-100">
-              <div className="flex items-start gap-5">
-                <i
-                  className="bi bi-code-slash text-4xl text-indigo-600"
-                  aria-hidden="true"
-                ></i>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">
-                    Exploración STEM
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Descubre ciencia, tecnología, ingeniería y matemáticas con
-                    actividades divertidas e interactivas.
-                  </p>
+            {services.map((s, idx) => (
+              <div
+                key={s.id}
+                className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-${
+                  100 + idx * 100
+                } border border-transparent hover:border-gray-100`}
+              >
+                <div className="flex items-start gap-5">
+                  <i
+                    className={`bi bi-${s.icon} text-4xl text-indigo-600`}
+                    aria-hidden="true"
+                  ></i>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2 text-gray-800">{s.title}</h3>
+                    <p className="text-sm text-gray-600">{s.text}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-200 border border-transparent hover:border-gray-100">
-              <div className="flex items-start gap-5">
-                <i
-                  className="bi bi-palette text-4xl text-indigo-600"
-                  aria-hidden="true"
-                ></i>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">
-                    Creatividad Digital
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Diseña, programa y crea proyectos que combinan innovación y
-                    arte.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-300 border border-transparent hover:border-gray-100">
-              <div className="flex items-start gap-5">
-                <i
-                  className="bi bi-graph-up-arrow text-4xl text-indigo-600"
-                  aria-hidden="true"
-                ></i>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">
-                    Mentorías Inspiradoras
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Conecta con mujeres líderes en tecnología que te acompañarán
-                    en tu camino.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-100 border border-transparent hover:border-gray-100">
-              <div className="flex items-start gap-5">
-                <i
-                  className="bi bi-robot text-4xl text-indigo-600"
-                  aria-hidden="true"
-                ></i>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">
-                    Comunidad Inclusiva
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Comparte ideas, sueña en grande y trabaja en equipo con
-                    otras chicas como tú.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-200 border border-transparent hover:border-gray-100">
-              <div className="flex items-start gap-5">
-                <i
-                  className="bi bi-person-check text-4xl text-indigo-600"
-                  aria-hidden="true"
-                ></i>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">
-                    Proyectos Colaborativos
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Impulsa iniciativas que transformen tu entorno con impacto
-                    real.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-300 border border-transparent hover:border-gray-100">
-              <div className="flex items-start gap-5">
-                <i
-                  className="bi bi-easel text-4xl text-indigo-600"
-                  aria-hidden="true"
-                ></i>
-                <div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-800">
-                    Talleres y Recursos
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    Accede a workshops, retos y materiales que fortalecen tus
-                    habilidades para el futuro.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

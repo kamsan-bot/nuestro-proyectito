@@ -1,0 +1,62 @@
+{
+  "features": [
+    {
+      "id": 1,
+      "title": "Proyectos Interactivos",
+      "text": "Explora proyectos guiados de programación, robótica y ciencia de forma práctica y creativa.",
+      "img": "https://cdn-icons-png.flaticon.com/512/11258/11258690.png",
+      "alt": "icono de foco",
+      "category": "proyectos",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Bienestar Emocional",
+      "text": "Herramientas de salud emocional, mindfulness y diarios digitales. Tu mente es tan importante como tus ideas.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeI0OXILUg1tOEFBaqsXihqN4ivfVZMgUYbA&s",
+      "alt": "icono de cerebro",
+      "category": "bienestar",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Inspiración Femenina",
+      "text": "Descubre historias de científicas y creadoras que rompen barreras. ¡Si ellas pudieron, tú también puedes!",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyiPoTDp-HSKatEiUm5wS0DCkUVQ3W5ZPeqg&s",
+      "alt": "icono de mujer",
+      "category": "inspiracion",
+      "featured": false
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "title": "Nuestra Identidad",
+      "text": "Promovemos la inclusión, el trabajo en equipo y la creatividad para que más chicas puedan descubrir su potencial.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWm2tLvx2qd2MyR0nk6R8qh16vxP-7GjqOanNmwK4EcsXfHoT9uEV5rH_3EL4DEuFcf1I&usqp=CAU",
+      "link": "/quienes",
+      "tags": ["identidad", "comunidad"]
+    },
+    {
+      "id": 2,
+      "title": "Nuestra Historia",
+      "text": "Creamos este espacio para romper barreras, impulsar vocaciones STEM y fortalecer el bienestar emocional.",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDaTkXGBFXWco4i78ZbkGjTx8P-MdPcEWA3w&s",
+      "link": "/quienes",
+      "tags": ["historia", "misión"]
+    }
+  ],
+  "services": [
+    { "id": 1, "icon": "code-slash", "title": "Exploración STEM", "text": "Descubre ciencia, tecnología, ingeniería y matemáticas con actividades divertidas e interactivas.", "category": "stem" },
+    { "id": 2, "icon": "palette", "title": "Creatividad Digital", "text": "Diseña, programa y crea proyectos que combinan innovación y arte.", "category": "creatividad" },
+    { "id": 3, "icon": "graph-up-arrow", "title": "Mentorías Inspiradoras", "text": "Conecta con mujeres líderes en tecnología que te acompañarán en tu camino.", "category": "mentorias" },
+    { "id": 4, "icon": "robot", "title": "Comunidad Inclusiva", "text": "Comparte ideas, sueña en grande y trabaja en equipo con otras chicas como tú.", "category": "comunidad" },
+    { "id": 5, "icon": "person-check", "title": "Proyectos Colaborativos", "text": "Impulsa iniciativas que transformen tu entorno con impacto real.", "category": "colaboracion" },
+    { "id": 6, "icon": "easel", "title": "Talleres y Recursos", "text": "Accede a workshops, retos y materiales que fortalecen tus habilidades para el futuro.", "category": "recursos" }
+  ],
+  "projects": [
+    { "id": "p1", "title": "Mini Robot", "summary": "Construye y programa un mini-robot con sensores básicos.", "difficulty": "medio", "img": "/img/project_robot.png" },
+    { "id": "p2", "title": "Diario de Bienestar", "summary": "Plantilla interactiva para llevar seguimiento emocional.", "difficulty": "fácil", "img": "/img/project_diary.png" },
+    { "id": "p3", "title": "Web Creativa", "summary": "Crea una página web accesible sobre tu proyecto.", "difficulty": "medio", "img": "/img/project_web.png" }
+  ]
+}

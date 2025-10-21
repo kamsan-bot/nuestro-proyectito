@@ -29,7 +29,9 @@ function Quienes() {
   return (
     <main className="bg-gray-50">
       <section className="py-28 bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-center animate-fadeIn">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-6">
+    
           <h1 className="text-5xl md:text-6xl font-extrabold drop-shadow-lg">
             Sobre Nosotros
           </h1>

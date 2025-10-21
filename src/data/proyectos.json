@@ -1,0 +1,16 @@
+[
+  {
+    "titulo": "Landing Page para startup",
+    "descripcion": "Diseño responsive con HTML, CSS y JS.",
+    "imagen": "/img/landing.png",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "link": "https://mi-proyecto.com"
+  },
+  {
+    "titulo": "App de recetas",
+    "descripcion": "Aplicación interactiva con almacenamiento local.",
+    "imagen": "/img/recetas.png",
+    "tecnologias": ["React", "LocalStorage"],
+    "link": "https://miapp.com"
+  }
+]
