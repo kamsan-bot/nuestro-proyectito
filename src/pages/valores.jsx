@@ -29,42 +29,36 @@ function Valores() {
 
       <section className="max-w-7xl mx-auto my-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/** Card 1 */}
           <article className="bg-white rounded-xl shadow-md p-6 text-center transform hover:translate-y-[-6px] transition-transform duration-300 animate-pop">
             <img src="/img/solidaridad.png" className="mx-auto h-28 w-28 object-contain mb-4" alt="Solidaridad" onError={(e)=>{e.target.src='/img/placeholder.png'}} />
             <h3 className="font-semibold text-lg mb-2">Solidaridad femenina</h3>
             <p className="text-sm text-gray-600">Defendemos el valor de apoyarnos unas a otras, creando redes de colaboración y hermandad que multiplican oportunidades.</p>
           </article>
 
-          {/** Card 2 */}
           <article className="bg-white rounded-xl shadow-md p-6 text-center transform hover:-translate-y-2 transition-transform duration-300 animate-pop">
             <img src="/img/confianza.jpg" className="mx-auto h-28 w-28 object-cover mb-4 rounded-full" alt="Confianza" onError={(e)=>{e.target.src='/img/placeholder.png'}} />
             <h3 className="font-semibold text-lg mb-2">Confianza en una misma</h3>
             <p className="text-sm text-gray-600">Promovemos la seguridad interior como motor para enfrentar desafíos, romper estereotipos y avanzar con determinación.</p>
           </article>
 
-          {/** Card 3 */}
           <article className="bg-white rounded-xl shadow-md p-6 text-center transform hover:-translate-y-2 transition-transform duration-300 animate-pop">
             <img src="/img/exito.jpg" className="mx-auto h-28 w-28 object-cover mb-4 rounded-md" alt="Educación" onError={(e)=>{e.target.src='/img/placeholder.png'}} />
             <h3 className="font-semibold text-lg mb-2">Educación y crecimiento</h3>
             <p className="text-sm text-gray-600">Impulsamos el aprendizaje continuo como la herramienta clave para transformar realidades y abrir nuevas puertas.</p>
           </article>
 
-          {/** Card 4 */}
           <article className="bg-white rounded-xl shadow-md p-6 text-center transform hover:-translate-y-2 transition-transform duration-300 animate-pop">
             <img src="/img/igualdad.jpg" className="mx-auto h-28 w-28 object-cover mb-4 rounded-md" alt="Igualdad" onError={(e)=>{e.target.src='/img/placeholder.png'}} />
             <h3 className="font-semibold text-lg mb-2">Igualdad y respeto</h3>
             <p className="text-sm text-gray-600">Defendemos un trato justo, libre de prejuicios, y celebramos la increíble diversidad de voces y experiencias.</p>
           </article>
 
-          {/** Card 5 */}
           <article className="bg-white rounded-xl shadow-md p-6 text-center transform hover:-translate-y-2 transition-transform duration-300 animate-pop">
             <img src="/img/resiliencia.png" className="mx-auto h-28 w-28 object-contain mb-4" alt="Resiliencia" onError={(e)=>{e.target.src='/img/placeholder.png'}} />
             <h3 className="font-semibold text-lg mb-2">Resiliencia</h3>
             <p className="text-sm text-gray-600">Reconocemos la fuerza que nace al superar obstáculos y convertirlos en oportunidades para nuestra evolución.</p>
           </article>
 
-          {/** Card 6 */}
           <article className="bg-white rounded-xl shadow-md p-6 text-center transform hover:-translate-y-2 transition-transform duration-300 animate-pop">
             <img src="/img/educacion.png" className="mx-auto h-28 w-28 object-contain mb-4" alt="Autonomía" onError={(e)=>{e.target.src='/img/placeholder.png'}} />
             <h3 className="font-semibold text-lg mb-2">Autonomía</h3>

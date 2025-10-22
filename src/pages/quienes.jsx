@@ -71,8 +71,6 @@ const equipo = [
           </p>
         </div>
       </section>
-
-      {/* Habilidades */}
       <section id="habilidades" className="py-12 bg-rose-50">
         <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">
@@ -92,8 +90,6 @@ const equipo = [
           ))}
         </ul>
       </section>
-
-      {/* Equipo */}
       <section id="equipo" className="py-12">
         <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold inline-block animate-scaleIn reveal-delay-200">

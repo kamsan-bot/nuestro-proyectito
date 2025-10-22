@@ -3,7 +3,7 @@ import { useState } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="backdrop-blur-md bg-white/70 shadow-lg">
+    <header className="relative backdrop-blur-md bg-white/70 shadow-lg z-[1000]">
       <nav className="container mx-auto flex items-center justify-between p-4">
         {/* LOGO */}
         <a href="/" className="flex items-center space-x-2">
@@ -18,7 +18,7 @@ function Navbar() {
         {/* BOTÓN HAMBURGUESA */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-gray-700 focus:outline-none"
+          className="lg:hidden text-gray-700 focus:outline-none z-[1100]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ function Navbar() {
 
         {/* LINKS */}
         <ul
-          className={`flex flex-col lg:flex-row lg:items-center lg:gap-6 absolute lg:static bg-white left-0 w-full lg:w-auto transition-all duration-300 ease-in-out ${
+          className={`flex flex-col lg:flex-row lg:items-center lg:gap-6 absolute lg:static bg-white left-0 w-full lg:w-auto transition-all duration-300 ease-in-out z-[999] shadow-md lg:shadow-none ${
             isOpen
               ? "top-16 opacity-100 visible"
               : "top-[-400px] opacity-0 lg:opacity-100 lg:visible"
@@ -90,5 +90,6 @@ function Navbar() {
     </header>
   );
 }
+
 
 export default Navbar;
