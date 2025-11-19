@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { div } from "framer-motion/client";
 
 function Formulario() {
   const [sugerencia, setSugerencia] = useState("");
@@ -30,6 +31,7 @@ function Formulario() {
   }
 
   return (
+    <>
     <div>
       <form
         id="form-sugerencia"
@@ -77,6 +79,26 @@ function Formulario() {
         </div>
       </form>
 
+      <div className="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form>
+          <input type="email" placeholder="Correo electrónico" required />
+          <input type="password" placeholder="Contraseña" required />
+          <button type="submit">Entrar</button>
+        </form>
+
+        <div className="divider">o</div>
+
+        <button className="google-btn">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
+            alt="Google Logo"
+          />
+          Iniciar sesión con Google
+        </button>
+      </div>
+
+
       {/* Lista de comentarios enviados */}
       <div className="max-w-md mx-auto mt-6 space-y-4">
         {comentarios.map((c) => (
@@ -92,7 +114,8 @@ function Formulario() {
         ))}
       </div>
     </div>
-  );
+   </>
+  )
 }
 
 export default Formulario;
