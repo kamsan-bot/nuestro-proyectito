@@ -11,6 +11,9 @@ import Inicio from "./pages/inicio";
 import Valores from './pages/valores'
 import Quienes from './pages/quienes'
 import Contacto from './pages/contacto'
+//mis paginas//
+import Comunidad from "./components/comunidad";
+import Login from "./components/login";
 function App() {
   return (
     <>
@@ -20,6 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={
               <>
+               <Login />
               <Hero />
               <Inicio />
                <Formulario />
@@ -28,6 +32,10 @@ function App() {
             <Route path="/valores" element={<Valores />} />    
             <Route path="/quienes" element={<Quienes />} /> 
             <Route path="/contacto" element={<Contacto />} />
+            <>
+                <Comunidad />
+            </>
+
           </Routes>
         </main>
         <Footer />          

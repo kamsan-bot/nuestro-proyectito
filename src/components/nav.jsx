@@ -1,7 +1,19 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
+import { getAuth, signOut } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+
+import './header.css'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+   const auth = getAuth();
+    const navigate = useNavigate();
+    //Funcion para cerrar sesion
+    const cerrarSesion = async() => {
+        await signOut(auth);
+        navigate("/");
+    }
   return (
     <header className="relative backdrop-blur-md bg-white/70 shadow-lg z-[1000]">
       <nav className="container mx-auto flex items-center justify-between p-4">
@@ -83,6 +95,14 @@ function Navbar() {
               className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               Contacto
+            </a>
+          </li>
+           <li>
+            <a
+              href="/valores"
+              className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
+            >
+              Iniciar sesion
             </a>
           </li>
         </ul>
