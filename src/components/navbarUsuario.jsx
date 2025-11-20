@@ -25,13 +25,13 @@ function NavbarUsuario() {
                             <Link to="/">Inicio</Link>
                         </li>
                         <li className="hover:text-pink-600 transition-all hover:scale-105">
-                            <Link to="/caracteristicas">Características</Link>
+                            <Link to="/valores">Valores</Link>
+                        </li>
+                        <li className="hover:text-pink-600 transition-all hover:scale-105">
+                            <Link to="/quienes">Quienes</Link>
                         </li>
                         <li className="hover:text-pink-600 transition-all hover:scale-105">
                             <Link to="/contacto">Contacto</Link>
-                        </li>
-                        <li className="hover:text-pink-600 transition-all hover:scale-105">
-                            <Link to="/peliculas">Películas</Link>
                         </li>
                         <li className="hover:text-pink-600 transition-all hover:scale-105">
                             <Link to="/comunidad">Comunidad</Link>

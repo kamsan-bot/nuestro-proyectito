@@ -3,6 +3,7 @@ import { FaWhatsapp, FaInstagram, FaYoutube } from "react-icons/fa";
 import proyectos from "../data/proyectos.json";
 import { motion } from "framer-motion";
 
+
 const features = [
   {
     title: "Proyectos Interactivos",

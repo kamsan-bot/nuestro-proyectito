@@ -85,6 +85,22 @@ function Navbar() {
               Contacto
             </a>
           </li>
+          <li>
+            <a
+              href="/comunidad"
+              className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
+            >
+              comunidad
+            </a>
+          </li>
+          <li>
+            <a
+              href="/navbarUsuario"
+              className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
+            >
+              Inicio sesion
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
