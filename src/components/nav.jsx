@@ -3,29 +3,29 @@ import { Link } from 'react-router-dom';
 import { getAuth, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
-import './header.css'
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-   const auth = getAuth();
-    const navigate = useNavigate();
-    //Funcion para cerrar sesion
-    const cerrarSesion = async() => {
-        await signOut(auth);
-        navigate("/");
-    }
+  const auth = getAuth();
+  const navigate = useNavigate();
+  
+  //Funcion para cerrar sesion
+  const cerrarSesion = async() => {
+    await signOut(auth);
+    navigate("/");
+  }
+
   return (
     <header className="relative backdrop-blur-md bg-white/70 shadow-lg z-[1000]">
       <nav className="container mx-auto flex items-center justify-between p-4">
         {/* LOGO */}
-        <a href="/" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2">
           <img
             src="https://cdn3d.iconscout.com/3d/premium/thumb/personaje-robot-con-inteligencia-artificial-y-expresion-iluminada-3d-icon-png-download-11431320.png"
             alt="TechBloom logo"
             className="w-12 h-12"
           />
           <span className="text-2xl font-bold text-gray-800">TechBloom</span>
-        </a>
+        </Link>
 
         {/* BOTÓN HAMBURGUESA */}
         <button
@@ -66,50 +66,57 @@ function Navbar() {
           }`}
         >
           <li>
-            <a
-              href="/"
+            <Link
+              to="/"
               className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               Inicio
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/quienes"
+            <Link
+              to="/quienes"
               className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               Quiénes somos
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/valores"
+            <Link
+              to="/valores"
               className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               Nuestros valores
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/contacto"
+            <Link
+              to="/contacto"
               className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
               Contacto
-            </a>
+            </Link>
           </li>
-           <li>
-            <a
-              href="/valores"
+          <li>
+            <Link
+              to="/login"
               className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
             >
-              Iniciar sesion
-            </a>
+              Iniciar sesión
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/comunidad"
+              className="block px-4 py-2 text-gray-800 hover:text-blue-600 font-medium transition-colors"
+            >
+              Comunidad
+            </Link>
           </li>
         </ul>
       </nav>
     </header>
   );
 }
-
 
 export default Navbar;

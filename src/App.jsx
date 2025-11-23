@@ -14,6 +14,8 @@ import Contacto from './pages/contacto'
 //mis paginas//
 import Comunidad from "./components/comunidad";
 import Login from "./components/login";
+import NavbarUsuario from "./components/navbarUsuario";
+import RegistrarUsuario from "./components/registrarUsuario";
 function App() {
   return (
     <>
@@ -23,19 +25,18 @@ function App() {
           <Routes>
             <Route path="/" element={
               <>
-               <Login />
               <Hero />
               <Inicio />
                <Formulario />
               </>
             } /> 
+            <Route path="/login" element={<Login />} />
+            <Route path="/registrarUsuario" element={<RegistrarUsuario />} />
             <Route path="/valores" element={<Valores />} />    
             <Route path="/quienes" element={<Quienes />} /> 
             <Route path="/contacto" element={<Contacto />} />
-            <>
-                <Comunidad />
-            </>
-
+            <Route path="/sesion" element={<NavbarUsuario/>} />
+            <Route path="/comunidad" element={<Comunidad/>} />
           </Routes>
         </main>
         <Footer />          
