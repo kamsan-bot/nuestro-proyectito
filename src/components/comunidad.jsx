@@ -527,7 +527,7 @@ function Comunidad() {
           {posts.length === 0 && (
             <div className="text-center py-12 bg-white rounded-2xl shadow-xl">
               <p className="text-gray-500 text-lg">
-                No hay publicaciones aún. ¡Sé el primero en publicarr!
+                No hay publicaciones aún. ¡Sé el primero en publicar!
               </p>
             </div>
           )}
