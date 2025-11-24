@@ -71,7 +71,7 @@ function Valores() {
         <div className="max-w-3xl mx-auto">
           <figure>
             <blockquote className="text-lg md:text-xl font-medium italic drop-shadow-sm">
-              "Si eres mujer y has escuchado en tu cabeza una voz que te dice: '¿Quién eres tú para decir algo?'. Recuerda que eres un ser humano que puede cambiar el mundo."
+              "Si eres mujer , has escuchado en tu cabeza una voz que te dice: '¿Quién eres tú para decir algo?'. Recuerda que eres un ser humano que puede cambiar el mundo."
             </blockquote>
             <figcaption className="mt-4 text-sm text-white/80">Una voz de inspiración para todas</figcaption>
           </figure>
