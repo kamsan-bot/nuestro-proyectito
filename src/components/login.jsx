@@ -20,7 +20,7 @@ function Login() {
             const user = userCredential.user;
             console.log("Se inicio sesion");
             // onLogin(user);
-            navigate("/");
+            navigate("/comunidad");
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -40,7 +40,7 @@ function Login() {
             const user = result.user;
             console.log("Iniciaste sesion con Google");
             // onLogin(user);
-            navigate("/");
+            navigate("/comunidad");
             
         }).catch((error) => {
             const errorCode = error.code;
