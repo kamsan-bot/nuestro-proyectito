@@ -1,50 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import app from '../firebase'; 
+
+import NavbarUsuario from './navbarUsuario';
+import NavbarVisitante from './navbarVisitante';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  return (
-    <header className="backdrop-blur-md bg-white/70 shadow-lg">
-      <nav className="container mx-auto flex items-center justify-between p-4">
-        {/* LOGO */}
-        <a href="/" className="flex items-center space-x-2">
-          <img
-            src="https://cdn3d.iconscout.com/3d/premium/thumb/personaje-robot-con-inteligencia-artificial-y-expresion-iluminada-3d-icon-png-download-11431320.png"
-            alt="TechBloom logo"
-            className="w-12 h-12"
-          />
-          <span className="text-2xl font-bold text-gray-800">TechBloom</span>
-        </a>
+  const auth = getAuth();
+  const navigate = useNavigate();
 
-        {/* BOTÓN HAMBURGUESA */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-gray-700 focus:outline-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-7 h-7"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
-        </button>
+  const [usuario, setUsuario] = useState(null)
 
+<<<<<<< HEAD
         {/* LINKS */}
         <ul
           className={`flex flex-col lg:flex-row lg:items-center lg:gap-6 absolute lg:static bg-white left-0 w-full lg:w-auto transition-all duration-300 ease-in-out ${
@@ -105,6 +75,29 @@ function Navbar() {
       </nav>
     </header>
   );
+=======
+  useEffect(()=>{
+        const auth = getAuth(app);
+
+        //Detectar usuario
+        const unsubscribe = onAuthStateChanged(auth, (user)=>{
+            if (user) {
+                setUsuario(user)
+            } else {
+                setUsuario(null)
+            }
+        });
+        return () => unsubscribe();
+    },[]);
+  
+  if (usuario) {
+    return <NavbarUsuario />
+  }else{
+    return <NavbarVisitante />
+  }
+
+  
+>>>>>>> 2b6652c1068931b5084ed027833e90e0c459c8b6
 }
 
 export default Navbar;

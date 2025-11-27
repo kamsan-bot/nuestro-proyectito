@@ -14,12 +14,20 @@ import Inicio from "./pages/inicio";
 import Valores from './pages/valores'
 import Quienes from './pages/quienes'
 import Contacto from './pages/contacto'
+<<<<<<< HEAD
 
 import Comunidad from "./components/comunidad";
 import RutaPrivada from "./components/rutaprivada";
 
 import Login from "./components/login";
 
+=======
+//mis paginas//
+import Comunidad from "./components/comunidad";
+import Login from "./components/login";
+import NavbarUsuario from "./components/navbarUsuario";
+import RegistrarUsuario from "./components/registrarUsuario";
+>>>>>>> 2b6652c1068931b5084ed027833e90e0c459c8b6
 function App() {
   return (
     <>
@@ -35,6 +43,7 @@ function App() {
               <>
                 <Login />
               </>
+<<<<<<< HEAD
             } />
           <Route path="/iniciar-sesion" element={<Login />} />
           <Route path="/comunidad" element={
@@ -48,6 +57,20 @@ function App() {
 
         <Footer />
       </BrowserRouter>
+=======
+            } /> 
+            <Route path="/login" element={<Login />} />
+            <Route path="/registrarUsuario" element={<RegistrarUsuario />} />
+            <Route path="/valores" element={<Valores />} />    
+            <Route path="/quienes" element={<Quienes />} /> 
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/sesion" element={<NavbarUsuario/>} />
+            <Route path="/comunidad" element={<Comunidad/>} />
+          </Routes>
+        </main>
+        <Footer />          
+      </Router>
+>>>>>>> 2b6652c1068931b5084ed027833e90e0c459c8b6
     </>
   )
 }

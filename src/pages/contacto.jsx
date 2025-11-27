@@ -1,26 +1,26 @@
 function Contacto() {
-const services = [
-  {
-    titulo: "Diseño Web Personalizado",
-    descripcion: "Creamos sitios modernos y adaptables para destacar tu marca digital.",
-    icono: "💻",
-  },
-  {
-    titulo: "Gestión de Portafolios",
-    descripcion: "Organizamos tus proyectos de manera visual e interactiva.",
-    icono: "🗂️",
-  },
-  {
-    titulo: "Asesoría Digital Colectiva",
-    descripcion: "Ayudamos a equipos a crear una identidad digital sólida y coherente.",
-    icono: "🚀",
-  },
-];
+  const services = [
+    {
+      titulo: "Diseño Web Personalizado",
+      descripcion: "Creamos sitios modernos y adaptables para destacar tu marca digital.",
+      icono: "💻",
+    },
+    {
+      titulo: "Gestión de Portafolios",
+      descripcion: "Organizamos tus proyectos de manera visual e interactiva.",
+      icono: "🗂️",
+    },
+    {
+      titulo: "Asesoría Digital Colectiva",
+      descripcion: "Ayudamos a equipos a crear una identidad digital sólida y coherente.",
+      icono: "🚀",
+    },
+  ];
 
   return (
     <main className="bg-gray-50">
       <section className="py-12 bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-center animate-fadeIn">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center opacity-20"></div>
         <div className="container mx-auto px-6 animate-slideUp reveal-delay-100">
           <h1 className="text-5xl md:text-6xl font-extrabold animate-scaleIn reveal-delay-200">
             ¡Conectemos!
@@ -53,17 +53,16 @@ const services = [
             {services.map((s, idx) => (
               <div
                 key={idx}
-                className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-${
-                  100 + idx * 100
-                } border border-transparent hover:border-gray-100`}
+                className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-slideUp reveal-delay-${100 + idx * 100
+                  } border border-transparent hover:border-gray-100`}
               >
                 <div className="flex items-start gap-5">
-  <span className="text-4xl">{s.icono}</span>
-  <div>
-    <h3 className="text-xl font-bold mb-2 text-gray-800">{s.titulo}</h3>
-    <p className="text-sm text-gray-600">{s.descripcion}</p>
-  </div>
-</div>
+                  <span className="text-4xl">{s.icono}</span>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2 text-gray-800">{s.titulo}</h3>
+                    <p className="text-sm text-gray-600">{s.descripcion}</p>
+                  </div>
+                </div>
 
               </div>
             ))}
