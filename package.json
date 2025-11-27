@@ -11,10 +11,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@tailwindcss/vite": "^4.1.14",
-=======
->>>>>>> 2b6652c1068931b5084ed027833e90e0c459c8b6
     "firebase": "^12.6.0",
     "framer-motion": "^12.23.24",
     "react": "^19.1.1",
